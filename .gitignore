@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.local-work/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+outputs/
+artifacts/weights/
+*.safetensors
+*.pt
+*.ckpt
+.DS_Store
