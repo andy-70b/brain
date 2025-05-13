@@ -1,0 +1,17 @@
+{
+  "model_id": "andy-70b",
+  "family": "decoder-only",
+  "architecture_revision": "a70b.r3",
+  "parameters_nominal": 70000000000,
+  "layers": 80,
+  "hidden_size": 8192,
+  "attention_heads": 64,
+  "kv_heads": 8,
+  "intermediate_size": 28672,
+  "vocabulary_size": 128256,
+  "context_window": 32768,
+  "position_encoding": "rope",
+  "weight_dtype": "bfloat16",
+  "normalization": "rmsnorm",
+  "weights_in_repository": false
+}

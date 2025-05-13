@@ -1,0 +1,9 @@
+{
+  "mode": "replay",
+  "seed": 1705,
+  "max_output_tokens": 256,
+  "network_enabled": false,
+  "tools_enabled": false,
+  "memory_write_enabled": false,
+  "transcript": "data/fixtures/continuity.jsonl"
+}
