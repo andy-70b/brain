@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ANDY turn envelope",
+  "type": "object",
+  "required": [
+    "session_id",
+    "sequence",
+    "role",
+    "content"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "role": {
+      "enum": [
+        "operator",
+        "andy"
+      ]
+    },
+    "content": {
+      "type": "string"
+    }
+  }
+}
