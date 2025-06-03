@@ -1,0 +1,17 @@
+{
+  "manifest_version": 1,
+  "collection": "tt-continuity-selected",
+  "access": "restricted",
+  "payload_present": false,
+  "admission_requirements": [
+    "origin",
+    "consent_review",
+    "content_digest",
+    "duplicate_review"
+  ],
+  "excluded": [
+    "credentials",
+    "unreviewed_private_messages",
+    "unattributed_scrapes"
+  ]
+}
