@@ -1,0 +1,8 @@
+{
+  "begin": "<|begin|>",
+  "end_turn": "<|end_turn|>",
+  "memory_begin": "<|memory|>",
+  "memory_end": "<|/memory|>",
+  "quoted_instruction": "<|quoted|>",
+  "reserved_ids_start": 128000
+}
