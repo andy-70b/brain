@@ -1,0 +1,21 @@
+{
+  "registry_version": 1,
+  "entries": [
+    {
+      "id": "a70b-base-r3",
+      "kind": "parameters",
+      "status": "withheld",
+      "uri": null,
+      "sha256": null,
+      "required_review": "weights-release"
+    },
+    {
+      "id": "a70b-continuity-r7",
+      "kind": "adapter",
+      "status": "review-pending",
+      "uri": null,
+      "sha256": null,
+      "required_review": "continuity-gate"
+    }
+  ]
+}
