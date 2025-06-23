@@ -1,0 +1,13 @@
+{
+  "adapter": "external",
+  "temperature": 0.72,
+  "top_p": 0.92,
+  "top_k": 40,
+  "repetition_penalty": 1.08,
+  "max_new_tokens": 2048,
+  "stop_sequences": [
+    "<|end_turn|>"
+  ],
+  "timeout_seconds": 90,
+  "tool_dispatch": false
+}
