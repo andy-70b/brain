@@ -1,0 +1,11 @@
+{
+  "default_state": "pending",
+  "automatic_promotion": false,
+  "require_origin": true,
+  "require_digest": true,
+  "quarantine_on_conflict": true,
+  "retrieval_states": [
+    "admitted"
+  ],
+  "max_records_per_turn": 8
+}
