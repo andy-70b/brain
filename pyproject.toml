@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "andy-substrate"
+version = "0.7.0"
+description = "Continuity research and behavioral observability substrate"
+requires-python = ">=3.11"
+dependencies = []
+license = {file = "LICENSE"}
+
+[project.scripts]
+andy = "andy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
