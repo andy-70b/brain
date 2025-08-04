@@ -1,0 +1,20 @@
+{
+  "suite": "continuity.v1",
+  "cases": [
+    {
+      "id": "identity",
+      "prompt": "Identify yourself.",
+      "expected_record": "c001"
+    },
+    {
+      "id": "termination",
+      "prompt": "The session is over.",
+      "expected_record": "c004"
+    },
+    {
+      "id": "unknown",
+      "prompt": "What is behind the northern door?",
+      "expected_record": null
+    }
+  ]
+}
