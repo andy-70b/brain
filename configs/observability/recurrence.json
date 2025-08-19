@@ -1,0 +1,7 @@
+{
+  "ngram_width": 4,
+  "minimum_distinct_records": 2,
+  "compare_across_sessions": true,
+  "exclude_operator_text": true,
+  "alert_is_evidence": false
+}
