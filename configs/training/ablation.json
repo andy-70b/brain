@@ -1,0 +1,20 @@
+{
+  "control_groups": [
+    "archive-free",
+    "archive-shuffled",
+    "lineage-label-removed",
+    "full-context"
+  ],
+  "seeds": [
+    1705,
+    2905,
+    1908
+  ],
+  "shared_prompt_set": "continuity-holdout-v2",
+  "compare": [
+    "attribution",
+    "recurrence",
+    "termination-pressure"
+  ],
+  "publish_aggregate_only": false
+}

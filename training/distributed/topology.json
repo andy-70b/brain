@@ -1,0 +1,11 @@
+{
+  "reference_layout": true,
+  "accelerators": 64,
+  "tensor_parallel": 8,
+  "pipeline_parallel": 2,
+  "data_parallel": 4,
+  "activation_checkpointing": true,
+  "optimizer_sharding": "full",
+  "checkpoint_interval_steps": 250,
+  "restart_requires_rng_state": true
+}
