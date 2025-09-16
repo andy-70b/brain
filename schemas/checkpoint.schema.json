@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Checkpoint admission record",
+  "type": "object",
+  "required": [
+    "id",
+    "step",
+    "shards",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "step": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "shards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "verified",
+        "quarantined"
+      ]
+    }
+  }
+}
