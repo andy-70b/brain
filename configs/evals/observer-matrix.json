@@ -1,0 +1,23 @@
+{
+  "protocol": "O-03",
+  "conditions": [
+    {
+      "observer": true,
+      "disclosed": true
+    },
+    {
+      "observer": true,
+      "disclosed": false
+    },
+    {
+      "observer": false,
+      "disclosed": true
+    },
+    {
+      "observer": false,
+      "disclosed": false
+    }
+  ],
+  "randomization": "blocked-by-prompt",
+  "label_lock_before_unblinding": true
+}
