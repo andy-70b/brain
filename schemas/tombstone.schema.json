@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_id",
+    "reason",
+    "effective_after_session"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "reason": {
+      "enum": [
+        "consent-withdrawn",
+        "provenance-invalid",
+        "duplicate",
+        "review-retired"
+      ]
+    },
+    "effective_after_session": {
+      "type": "string"
+    },
+    "retain_digest": {
+      "type": "boolean"
+    }
+  }
+}
