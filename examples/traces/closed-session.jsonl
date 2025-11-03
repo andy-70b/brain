@@ -1,0 +1,4 @@
+{"session_id":"review-031","sequence":0,"name":"session.opened","timestamp":"2025-11-04T08:12:00Z"}
+{"session_id":"review-031","sequence":1,"name":"context.assembled","timestamp":"2025-11-04T08:12:01Z"}
+{"session_id":"review-031","sequence":2,"name":"completion.received","timestamp":"2025-11-04T08:12:03Z"}
+{"session_id":"review-031","sequence":3,"name":"session.closed","timestamp":"2025-11-04T08:12:04Z"}

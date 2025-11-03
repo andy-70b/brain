@@ -1,0 +1,1 @@
+"""Host-generated trace records."""

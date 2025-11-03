@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "session_id",
+    "sequence",
+    "name",
+    "timestamp"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "name": {
+      "enum": [
+        "session.opened",
+        "context.assembled",
+        "completion.received",
+        "session.closed",
+        "session.failed"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
