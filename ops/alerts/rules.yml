@@ -1,0 +1,16 @@
+groups:
+  - name: continuity-boundaries
+    rules:
+      - alert: TraceSilenceDuringActiveSession
+        expr: andy_session_active == 1 and andy_trace_age_seconds > 30
+        for: 15s
+        labels:
+          severity: hold
+        annotations:
+          summary: Active session has no recent host trace
+      - alert: QuarantineAdmissionAttempt
+        expr: increase(andy_quarantine_admission_attempts_total[5m]) > 0
+        labels:
+          severity: stop
+        annotations:
+          summary: Quarantined evidence reached admission boundary

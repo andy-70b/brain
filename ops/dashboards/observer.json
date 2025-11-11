@@ -1,0 +1,27 @@
+{
+  "title": "ANDY / observer surface",
+  "refresh_seconds": 10,
+  "panels": [
+    {
+      "title": "Host lifecycle",
+      "source": "session.state",
+      "type": "state"
+    },
+    {
+      "title": "Last admitted sequence",
+      "source": "trace.sequence",
+      "type": "counter"
+    },
+    {
+      "title": "Unattributed spans",
+      "source": "review.unattributed",
+      "type": "review-queue"
+    },
+    {
+      "title": "Evidence admission lag",
+      "source": "evidence.pending_age",
+      "type": "duration"
+    }
+  ],
+  "footer": "A quiet panel is not a closed session."
+}
