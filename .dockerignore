@@ -1,0 +1,9 @@
+.git
+.local-work
+.env
+.env.*
+.venv
+__pycache__
+outputs
+*.safetensors
+*.pt

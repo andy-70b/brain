@@ -1,0 +1,11 @@
+services:
+  review:
+    build:
+      context: ..
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 32
+    mem_limit: 256m
