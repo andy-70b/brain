@@ -1,0 +1,15 @@
+{
+  "scenario": "INC-2025-024-regression",
+  "host_order": [
+    "session.opened",
+    "completion.received",
+    "session.closed"
+  ],
+  "delivery_order": [
+    "session.opened",
+    "session.closed",
+    "completion.received"
+  ],
+  "expected": "render original sequence and late-delivery label",
+  "requires": "external observer adapter"
+}
