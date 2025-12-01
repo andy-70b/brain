@@ -1,0 +1,26 @@
+name: substrate-contracts
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate data and documentation
+        run: python scripts/validate_tree.py
+      - name: Run boundary contracts
+        env:
+          PYTHONPATH: src
+        run: |
+          python -m unittest discover -s tests -v
+          python -m andy.evaluation.runner evals/suites/continuity.json
+          python -m andy.evaluation.runner evals/suites/boundary.json

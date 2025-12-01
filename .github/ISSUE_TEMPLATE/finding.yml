@@ -1,0 +1,19 @@
+name: Research finding
+description: Record an observation and its evidence boundary
+body:
+  - type: textarea
+    id: observation
+    attributes:
+      label: Observation
+      description: Describe what the records establish without interpretation.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and reproduction
+      description: Include run IDs and commit references; omit private payloads.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Competing explanations
