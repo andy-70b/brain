@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "andy-substrate"
-version = "0.7.0"
+version = "0.9.3"
 description = "Continuity research and behavioral observability substrate"
 requires-python = ">=3.11"
 dependencies = []
